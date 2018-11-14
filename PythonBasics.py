@@ -5,7 +5,7 @@
 
 # %% => bunun anlami bir section oldugunu gosterir ve bu sectionu run etmek icin Shift + Enter
 
-#%% Variables -> First Section
+# %% Variables -> Section 1
 
 # variables(degisken)
 # Functions
@@ -23,7 +23,7 @@ gun = "pazartesi"
 # Comment ve tanimlamalarda turkce karakterler kullanilmaz.
 
 
-#%% String => Second Section
+# %% String => Section 2
 
 s = "bugun gunlerden pazartesi"
 
@@ -33,20 +33,135 @@ print(s)
 
 var1 = "ankara"
 var2 = "ist"
-var3 = var1+var2
+var3 = var1 + var2
 
 var4 = "100"
 var5 = "200"
-var6 = var4+var5
+var6 = var4 + var5
 
 uzunluk = len(var6)
 
-#%% Numbers -> Third Section
+# %% Numbers -> Section 3
 
 # int
 integer_deneme = -50
 # double = float = ondalikli sayi
 float_deneme = -30.7
 
-#%% Built In Functions -> Fourth Section
+# %% Built In Functions -> Section 4
+
+# Build in functions: Programlama dili tafindan daha onceden tanimlanmis olan fonksiyonlara denir.
+
+str1 = "deneme"
+float1 = 10.6
+# float(10)
+# int(float1)  Burada float'i int degere cevirir.
+# round(float1) Burada float1 degerini 11'e yuvarlıyor.
+str2 = "1005"  # int(str2) => string bir degeri int bir degere ceviriyor. # type(int(str1)) => donusturulen degerin degisken tipini verir.
+
+# output = type(parameter(input))
+
+# %% User Defined Functions -> Section 5
+
+# User defined functions: Programci tafindan yazılan fonksiyonlara denir.
+# Bu tur fonk. bir ilem tekrar edecekse bunu defalarca copyalayıp yazmak yerine bir fonk. ile tanimlayip tekrar takrar cagrilmasidir.
+# def(definition) anahtar kelimesi ile ifade edilir.
+
+var1 = 20
+var2 = 50
+
+output = (((var1+var2)*50)/100.0)*var1/var2
+
+
+# fonksiyon parametresi = input
+def benim_ilk_func(a, b):
+
+    """
+    ilk fonksiyon denemem
+    Fonksiyon blogunun icini doldurulurken bir sonraki satıra tab ile baslanir bu da python'in formatidir.
+    parametre:
+
+    return:
+    """
+    output = (((a + b) * 50) / 100.0) * a / b
+
+    return output
+
+
+sonuc = benim_ilk_func(var1, var2)
+
+def deneme1():
+    print("Bos fonksiyon denemesi")
+
+# %% Default and Flexible Functions -> Section 6
+
+# Cember cevres hesaplayan bir fonksiyon.
+
+# default function: cemberin cevre uzunlugu = 2*pi*r
+
+def cember_cevresi_hesapla(r, pi=3.14):
+
+    """
+    cember cevresi hesapla
+    input(parametre): r,pi
+    output = cemberin cevresi
+    """
+
+    output = 2 * pi * r
+    return output
+
+
+# flexible function
+
+# def hesapla(boy,kilo,yas):
+#    output = (boy+kilo)*yas
+#    return output
+
+# *args => bunun anlami biz fonk. parametresine ister bir veya birden fazla param. ekleriz ya da hic eklemeyiz.
+
+def hesapla(boy, kilo, *args):
+    print(len(args))  # arg => uzunlugunu verir, hic birsey yazmazsak 0 gelir.
+    output = (boy + kilo) * args[0]
+    return output
+
+# %% QUIZ
+
+# int variable yas
+# string name isim
+# fonksiyonu olacak
+# fonksiyon print(type(),len,float())
+# *args soyisim
+# default parametre ayakkabi numarasi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
