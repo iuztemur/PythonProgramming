@@ -70,12 +70,11 @@ str2 = "1005"  # int(str2) => string bir degeri int bir degere ceviriyor. # type
 var1 = 20
 var2 = 50
 
-output = (((var1+var2)*50)/100.0)*var1/var2
+output = (((var1 + var2) * 50) / 100.0) * var1 / var2
 
 
 # fonksiyon parametresi = input
 def benim_ilk_func(a, b):
-
     """
     ilk fonksiyon denemem
     Fonksiyon blogunun icini doldurulurken bir sonraki satıra tab ile baslanir bu da python'in formatidir.
@@ -90,8 +89,10 @@ def benim_ilk_func(a, b):
 
 sonuc = benim_ilk_func(var1, var2)
 
+
 def deneme1():
     print("Bos fonksiyon denemesi")
+
 
 # %% Default and Flexible Functions -> Section 6
 
@@ -100,7 +101,6 @@ def deneme1():
 # default function: cemberin cevre uzunlugu = 2*pi*r
 
 def cember_cevresi_hesapla(r, pi=3.14):
-
     """
     cember cevresi hesapla
     input(parametre): r,pi
@@ -124,6 +124,7 @@ def hesapla(boy, kilo, *args):
     output = (boy + kilo) * args[0]
     return output
 
+
 # %% QUIZ
 
 # int variable yas
@@ -133,35 +134,51 @@ def hesapla(boy, kilo, *args):
 # *args soyisim
 # default parametre ayakkabi numarasi
 
+yas = 27
+name = "ismail"
+soyisim = "uztemur"
 
 
+def function_quiz(yas, name, *args, ayakkabi_numarasi=44):
+    print("Cocugun ismi: ", name, " yasi: ", yas, " ayak numarasi: ", ayakkabi_numarasi)
+    print(type(name))
+    print(float(yas))
+
+    output = args[0] * yas
+
+    return output
 
 
+sonuc = function_quiz(yas, name, soyisim)
+
+print("args[0]*yas: ", sonuc)
 
 
+# %%
+# Lambda Function -> Section 7
+
+def hesapla(x):
+    return x * x
 
 
+sonuc = hesapla(3)
+
+sonuc2 = lambda x: x * x
+print(sonuc2(3))
 
 
+# %%
+# List -> Section 8
 
+liste = [1,2,3,4,5,6]
+type(liste)
 
+liste_str = ["ptesi","sali","cars"]
+type(liste_str)
 
+value = liste[1] # Listenin Ilk elamanini getirir.
+print(value)
 
+last_value = liste[-1] # Listenin Son Elamanini Getirir.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+liste_divide = liste[0:3] # Listenin belirlenmiş elemanlarini 
