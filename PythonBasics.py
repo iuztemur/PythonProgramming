@@ -182,3 +182,44 @@ print(value)
 last_value = liste[-1] # Listenin Son Elamanini Getirir.
 
 liste_divide = liste[0:3] # Listenin belirlenmiş elemanlarini 
+
+liste.append(7) # Bir listenin en sonuna bir elaman ekler
+liste.remove(7) # Bir listeden elaman cıkarır
+liste.reverse(7) # Listeyi ters çevirir.
+liste2 = [1,5,4,3,6,7,2]
+liste2.sort() # Listenin elemanlarını sıralar.
+
+string_int_liste = [1,2,3,"aa","bb"]
+
+
+
+# %%
+# Tuple -> Section 9 
+# dir(tuple) kullanilan fonksiyonlarini gösterir.dir
+# help(tuple.funk.) fonk. elamanlarinin nasil kullanildigini gosterir.
+
+t = (1,2,3,3,4,5,6)
+
+t.count(3) # count icinde yazilan elemanin listedeki kullanim sayisini verir.
+t.index(3) # index icindeki elemanin kullaildigi indexi gosterir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
