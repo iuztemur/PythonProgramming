@@ -23,6 +23,7 @@ gun = "pazartesi"
 # Comment ve tanimlamalarda turkce karakterler kullanilmaz.
 
 
+
 # %% String => Section 2
 
 s = "bugun gunlerden pazartesi"
@@ -41,12 +42,16 @@ var6 = var4 + var5
 
 uzunluk = len(var6)
 
+
+
 # %% Numbers -> Section 3
 
 # int
 integer_deneme = -50
 # double = float = ondalikli sayi
 float_deneme = -30.7
+
+
 
 # %% Built In Functions -> Section 4
 
@@ -60,6 +65,8 @@ float1 = 10.6
 str2 = "1005"  # int(str2) => string bir degeri int bir degere ceviriyor. # type(int(str1)) => donusturulen degerin degisken tipini verir.
 
 # output = type(parameter(input))
+
+
 
 # %% User Defined Functions -> Section 5
 
@@ -94,6 +101,7 @@ def deneme1():
     print("Bos fonksiyon denemesi")
 
 
+    
 # %% Default and Flexible Functions -> Section 6
 
 # Cember cevres hesaplayan bir fonksiyon.
@@ -125,6 +133,7 @@ def hesapla(boy, kilo, *args):
     return output
 
 
+  
 # %% QUIZ
 
 # int variable yas
@@ -154,6 +163,7 @@ sonuc = function_quiz(yas, name, soyisim)
 print("args[0]*yas: ", sonuc)
 
 
+
 # %%
 # Lambda Function -> Section 7
 
@@ -167,8 +177,10 @@ sonuc2 = lambda x: x * x
 print(sonuc2(3))
 
 
+
 # %%
 # List -> Section 8
+# Cok fazla data store edilirken kullanila bilir.
 
 liste = [1,2,3,4,5,6]
 type(liste)
@@ -202,6 +214,97 @@ t = (1,2,3,3,4,5,6)
 
 t.count(3) # count icinde yazilan elemanin listedeki kullanim sayisini verir.
 t.index(3) # index icindeki elemanin kullaildigi indexi gosterir.
+
+
+
+# %% Dictionary -> Section 10
+# Local databaseler icin dictionary kullanmak veya multiple return yaparken kullanmak daha iyi
+
+dictionary = {"ali": 32, "ahmet": 38, "ayse":15}
+
+# ali, ahmet, ayse = keys
+# 32,45,13 = values
+
+def deneme():
+    dictionary = {"ali": 32, "ahmet": 38, "ayse":15}
+    return dictionary
+
+dic = deneme()
+
+
+
+# %% Conditionals -> Section 11
+# if else statement, else statement tan sonra daima  ':' ile islemi sonlandirmak gerekiyor.
+
+var1 = 10
+var2 = 20
+
+if(var1 > var2):
+    print("var1 buyuktur var2")
+elif(var1 == var2):
+    print("var and var2 esitler")
+else:
+    print("var1 kucuktur var2")
+
+
+liste = [1,2,3,4,5]
+
+value = 3
+if value in liste:
+    print("evet {} degeri listenin icinde".format(value))
+else:
+    print("hayir")
+
+
+keys = dictionary.keys()
+
+if "can" in keys:
+    print("evet")
+else:
+    print("hayir")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
